@@ -1,26 +1,27 @@
 #include<stdio.h>
-int evensum(int arr[],int size)
-{   
-    // int sum=0;
-    for (int i = 0 ;i<size;i++)
-    {
+
+void printPrimes(int arr[], int size) {   
+    for (int i = 0; i < size; i++) {
         int k = arr[i];
-        // printf("%dk",k);
-        for (int j =2;j*j<=k;j++)
-        {
-            if (k%j!=0)
-            
-            printf("%dh\n",k);
-            
+        int isPrime = 1;  
+        for (int j = 2; j * j <= k; j++) {
+            if (k % j == 0) {
+                isPrime = 0;  
+                break;        
+            }
         }
-    // printf("%d",sum);
-    
+
+        if (isPrime && k > 1) {
+            printf("%d\n", k);  
+        }
+    }
 }
-}
-int main()
-{
-    int arr[]={2,3,4,5,6};
-    int size =5;
+
+int main() {
+    int arr[] = {2, 15, 4, 3, 7};
+    int size = 5;
     
-    evensum(arr,size);
+    printPrimes(arr, size);
+    
+    return 0;
 }

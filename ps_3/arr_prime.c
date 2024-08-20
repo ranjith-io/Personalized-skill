@@ -1,4 +1,5 @@
-#include<stdio.h>
+\\#include<stdio.h>
+
 int evensum(int arr[],int size)
 {   
     for (int i= 0;i<size;i++)
@@ -18,7 +19,7 @@ int evensum(int arr[],int size)
 
 
         
-        for (int j =2;j*j<=k;j++)
+        for (int j = 2;j*j<=k;j++)
         {
             if (k%j==0){
             break;

@@ -1,4 +1,4 @@
-    #include <stdio.h>  
+\\#include <stdio.h>  
     int main ()  
     {  
         int arr[20], i, j, k, size;  
@@ -11,7 +11,7 @@
         {  
             scanf (" %d", &arr[i]);  
         }  
-          
+         
           
         for ( i = 0; i < size; i ++)  
         {  

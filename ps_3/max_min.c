@@ -25,8 +25,8 @@ int main() {
         
     }
     int dif = max-min;
-    printf("%d",dif);
-    printf("\n%d",max);
-    printf("\n%d",min);
+    printf("dif%d\n",dif);
+    printf("max%d\n",max);
+    printf("min%d\n",min);
     return 0;
 }
