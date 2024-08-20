@@ -19,7 +19,7 @@
             {  
                 if ( arr[i] == arr[j])  
                 {  
-                    for ( k = j; k < size - 1; k++)  
+                    for ( k = j+1; k < size - 1; k++)  
                     {  
                         arr[k] = arr [k + 1];  
                     }  

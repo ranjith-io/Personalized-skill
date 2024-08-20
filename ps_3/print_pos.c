@@ -1,39 +1,25 @@
 #include<stdio.h>
-int evensum(int arr[],int size)
+int printpos(int arr[],int size)
 {   
     for (int i= 0;i<size;i++)
     {
         printf("%d ",arr[i]);
     }
     printf("\n");
-    // int sum=0;
+    
     for (int i = 0 ;i<size;i++)
     {
-        int k = arr[i];
-        if (arr[i]==3)
+        if (arr[i]>=0)
         {
-            printf("%d",arr[i]);
-            break;
-        }
-
-
-        
-        for (int j =2;j*j<=k;j++)
-        {
-            if (k%j==0){
-            break;
-            }
-            else {
             printf("%d ",arr[i]);
-            break;
-            }
-            
-            
         }
+    }
     
+    
+    
+}
    
-}
-}
+
 int main()
 {
     int size;
@@ -46,5 +32,5 @@ int main()
     }
     // printf("%d",arr[size]);
     
-    evensum(arr,size);
+    printpos(arr,size);
 }

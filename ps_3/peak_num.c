@@ -6,34 +6,30 @@ int evensum(int arr[],int size)
         printf("%d ",arr[i]);
     }
     printf("\n");
-    // int sum=0;
-    for (int i = 0 ;i<size;i++)
-    {
-        int k = arr[i];
-        if (arr[i]==3)
-        {
-            printf("%d",arr[i]);
-            break;
-        }
-
-
-        
-        for (int j =2;j*j<=k;j++)
-        {
-            if (k%j==0){
-            break;
-            }
-            else {
-            printf("%d ",arr[i]);
-            break;
-            }
-            
-            
-        }
     
+    int peak = arr[0];
+    
+    // for (int i = 1 ;i<size;i++)
+    int i = 1;
+    
+    for (int j = 2 ;j<=size;j++)
+    {
+        if (arr[i]>arr[j]&&arr[i-1]<arr[i])
+        {
+            if (arr[i]>peak)
+            {
+            peak = arr[i];
+            }
+        }
+        i++;
+    }
+    
+            printf("%d",peak);
+
+}
+    // printf("%d ",arr[i]);
    
-}
-}
+
 int main()
 {
     int size;
