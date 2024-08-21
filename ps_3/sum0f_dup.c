@@ -9,11 +9,16 @@ int dupRemove(int arr[],int size) {
             {  
                 if ( arr[i] == arr[j])  
                 {  
+                    // printf("%di",arr[i]);
+                    sum+=arr[i];
+                    
+                    
+                    
                     for ( k = j; k < size - 1; k++)  
                     { 
-                        sum+=arr[k]; 
                         arr[k] = arr [k + 1];  
                     }  
+                    
                     size--;  
                       
                     j--;      
@@ -27,13 +32,13 @@ int dupRemove(int arr[],int size) {
         for ( i = 0; i < size; i++)  
         {  
             printf (" %d \t", arr[i]);  
-        }  
-        printf("%d",sum);
+        } 
+        printf("\nSum of duplicate elements: %d\n", sum); 
         return 0; 
 }
 
 int main() {
-    int arr[] = {2, 15, 4, 15, 7,2,15};
+    int arr[] = {2, 15, 4, 8, 2,15,15};
     int size = 7;
     
     dupRemove(arr, size);

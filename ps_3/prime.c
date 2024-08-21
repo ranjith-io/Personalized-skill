@@ -11,6 +11,7 @@ void printPrimes(int arr[], int size) {
             }
         }
 
+        // if(!isPrime) for not prime numbers
         if (isPrime && k > 1) {
             printf("%d\n", k);  
         }
