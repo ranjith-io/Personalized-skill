@@ -2,7 +2,7 @@
 
 int findSecondLargest(int arr[], int n) {
     int largest = arr[0];
-    int second_largest = arr[0];
+    int second_largest = arr[1];
 
     for (int i = 1; i < n; i++) {
         if (arr[i] > largest) {
