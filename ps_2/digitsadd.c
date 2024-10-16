@@ -4,8 +4,8 @@ int digitadd(int num){
     
     int first,last;
     int count=log10(num);
-    first=num%10;
-    last=num/pow(10,count);
+    last=num%10;
+    first=num/pow(10,count);
     int add = first +last;
     printf("%d",add);
 }

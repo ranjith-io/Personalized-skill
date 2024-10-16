@@ -11,7 +11,6 @@ int dupRemove(int arr[],int size) {
                 {  
                     for ( k = j; k < size - 1; k++)  
                     { 
-                        sum+=arr[k]; 
                         arr[k] = arr [k + 1];  
                     }  
                     size--;  
@@ -28,7 +27,6 @@ int dupRemove(int arr[],int size) {
         {  
             printf (" %d \t", arr[i]);  
         }  
-        printf("%d",sum);
         return 0; 
 }
 

@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main() {
+int main(){
     int num ,count,digit;
     scanf("%d",&num);
     

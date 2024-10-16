@@ -1,5 +1,6 @@
 {
     "files.associations": {
-        "reversedigit.C": "cpp"
+        "reversedigit.C": "cpp",
+        "math.h": "c"
     }
 }

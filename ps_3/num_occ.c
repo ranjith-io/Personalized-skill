@@ -21,6 +21,7 @@ void countOccurrences(int arr[], int size) {
                     counted[j] = 1;  // Mark this element as counted
                 }
             }
+            // if(count>1) for on;y repeated elements
             printf("%d\t%d\n", arr[i], count);
         }
     }
