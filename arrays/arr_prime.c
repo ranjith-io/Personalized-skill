@@ -1,4 +1,4 @@
-\\#include<stdio.h>
+#include<stdio.h>
 
 int evensum(int arr[],int size)
 {   
