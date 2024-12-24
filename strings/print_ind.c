@@ -5,8 +5,6 @@ int main() {
     char str[100]; /* Declares a string of size 100 */
     int l = 0; // Initialize a variable to store the index of the string
 
-    printf("\n\nSeparate the individual characters from a string :\n"); // Display information about the task
-    printf("------------------------------------------------------\n");
     printf("Input the string : ");
 
     // Read a string from the standard input (keyboard) using fgets()

@@ -8,8 +8,6 @@ int main() {
     char str[str_size];
     int i, wrd;
     
-    printf("\n\nCount the total number of words in a string :\n");
-    printf("------------------------------------------------------\n");
     printf("Input the string : ");
     
     fgets(str, sizeof str, stdin); // Input the string

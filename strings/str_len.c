@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 #include <stdlib.h>
 
 int main() {
@@ -10,11 +11,13 @@ int main() {
 
     
     fgets(str, sizeof str, stdin);
+    str[strcspn(str, "\n")] = 0; 
 
     while (str[l] != '\0') {
         l++; 
     }
 
-    printf("Length of the string is : %d\n\n", l - 1); // Display the length of the string
+    printf("Length of the string is : %d\n\n", l); // Display the length of the string
 	
 	return 0;
+}

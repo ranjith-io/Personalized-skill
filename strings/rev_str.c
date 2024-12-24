@@ -6,8 +6,6 @@ int main() {
     char str[100]; // Declares a string of size 100
     int l, i; // Declare variables for string length and loop iteration
 
-    printf("\n\nPrint individual characters of string in reverse order :\n");
-    printf("------------------------------------------------------\n");
     printf("Input the string : ");
 
     // Read a string from the standard input (keyboard) using fgets()
