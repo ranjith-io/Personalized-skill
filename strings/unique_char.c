@@ -10,7 +10,7 @@ int main() {
     for (int i=0;i<size;i++){
         if (visited[i]==0){
         for (int j=i+1;j<size;j++){
-            if(str[i]==str[j]){
+            if(str[i]==str[j]&&visited[j]==0){
             visited[j]=1;
             // visited[i]=1;//uncomment to display only unique char.
             }
