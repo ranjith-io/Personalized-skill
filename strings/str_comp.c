@@ -28,7 +28,9 @@ int main() {
 
     printf("Enter the second string: ");
     fgets(str2,sizeof str2,stdin);
-
+    str1[strcspn(str1,"\n")]=0;
+    str2[strcspn(str2,"\n")]=0;
+    
     if (compareStrings(str1, str2)) {
         printf("The strings are the same.\n");
     } else {
